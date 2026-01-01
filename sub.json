@@ -1,0 +1,26 @@
+[
+  {
+    "remarks" : "Server 1",
+    "server"  : "im7.htethtut.site",
+    "password": "y2IpZO65LTmN1S1VxySKA+apDbPsKQP7UTogc3C11M0=",
+    "ip"      : "2606:4700:110:890c:8ae1:70ca:9e11:967c"
+  },
+  {
+    "remarks" : "Server 2",
+    "server"  : "im1.htethtut.site",
+    "password": "RCyI2ue7rAkdVXPss5dduUXSL1wPJjDkp9Ntp1rue8w=",
+    "ip"      : "2606:4700:110:899e:7c77:7fb2:fa0c:480b"
+  },
+  {
+    "remarks" : "Server 3",
+    "server"  : "im7.htethtut.site",
+    "password": "y2IpZO65LTmN1S1VxySKA+apDbPsKQP7UTogc3C11M0=",
+    "ip"      : "2606:4700:110:890c:8ae1:70ca:9e11:967c"
+  },
+  {
+    "remarks" : "Server 4",
+    "server"  : "im3.htethtut.site",
+    "password": "y2IpZO65LTmN1S1VxySKA+apDbPsKQP7UTogc3C11M0=",
+    "ip"      : "2606:4700:110:890c:8ae1:70ca:9e11:967c"
+  }
+]
