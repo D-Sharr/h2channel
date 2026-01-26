@@ -1,7 +1,8 @@
 {
-  "version":"1.0.0",
-  "id":"bf597a7",
-  "update":false,
+  "version_name":"1.0.0",
+  "version_code":"1",
   "url":"https://h2tunnel.htethtut.site",
-  "message":"New Version is Released"
+  "message":"New Version is Released!"
+  "notice":"Be Enjoy !",
+  "send": false
 }
