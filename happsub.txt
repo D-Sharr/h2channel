@@ -1,0 +1,13 @@
+#profile-title: HeyHey3
+#profile-update-interval: 2
+#subscription-auto-update-enable: 1
+#subscription-userinfo: upload=0; download=0; total=107374182400; expire=1777507200
+#providerid: l4gq30F3
+#hide-settings: 1
+#sub-info-text: Hello users
+#sub-info-color: green
+#sub-info-button-text: Join Now
+#sub-info-button-link: https://t.me/HtetHtut
+#sub-expire: 1
+#sub-expire-button-link: https:/t.me/HtetHtut
+vless://af59e3cb-63e2-4981-93fc-03373010f017@104.24.235.181:443?flow=&type=ws&host=h2v2.htethtut.site&path=/?ed%3D2048&security=tls&sni=h2v2.htethtut.site&fp=chrome&allowInsecure=0&echfq=none#ZeroTrust
