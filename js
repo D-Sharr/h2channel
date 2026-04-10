@@ -9,5 +9,5 @@
 #sub-info-button-text: Join Now
 #sub-info-button-link: https://t.me/HtetHtut
 #sub-expire: 1
-##sub-expire-button-link: https:/t.me/HtetHtut
+#sub-expire-button-link: https:/t.me/HtetHtut
 vless://af59e3cb-63e2-4981-93fc-03373010f017@104.24.235.181:443?flow=&type=ws&host=h2v2.htethtut.site&path=/?ed%3D2048&security=tls&sni=h2v2.htethtut.site&fp=chrome&allowInsecure=0&echfq=none#ZeroTrust
