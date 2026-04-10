@@ -6,7 +6,6 @@
 #hide-settings: 1
 #sub-info-text: Hello users
 #sub-info-color: green
-#sub-info-button-text: Join Now
 #sub-info-button-link: https://t.me/HtetHtut
 #sub-expire: 1
 #sub-expire-button-link: https:/t.me/HtetHtut
