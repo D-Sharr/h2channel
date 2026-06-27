@@ -1,6 +1,6 @@
 {
   "remarks": "WG-Clean",
-  "meta": {"serverDescription": "Your text"}
+  "meta": {"serverDescription": "Your text"},
   "log": {
     "loglevel": "warning"
   },
