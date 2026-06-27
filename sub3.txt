@@ -10,4 +10,87 @@
 #sub-info-button-link: https://t.me/HtetHtut
 #sub-expire: 1
 #sub-expire-button-link: https:/t.me/HtetHtut
-vless://af59e3cb-63e2-4981-93fc-03373010f017@104.24.235.181:443?flow=&type=ws&host=h2v2.htethtut.site&path=/?ed%3D2048&security=tls&sni=h2v2.htethtut.site&fp=chrome&allowInsecure=0&echfq=none#ZeroTrust
+{
+  "remarks": "WG-Clean",
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": ["http", "tls"],
+        "enabled": true,
+        "routeOnly": false
+      },
+      "tag": "socks"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "wireguard",
+      "settings": {
+        "address": [
+          "172.16.0.2/32",
+          "2606:4700:110:8ea1:2869:2236:799c:c1d2/128"
+        ],
+        "mtu": 1280,
+        "peers": [
+          {
+            "endpoint": "162.159.192.1:500",
+            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+          }
+        ],
+        "reserved": [0, 0, 0],
+        "secretKey": "1NljYRxGmzrizk/GWCsutzDvZ7NKkWZHQq0+w2cbQKc="
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    },
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "stats": {},
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "network": "udp",
+        "port": "443",
+        "outboundTag": "block"
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "proxy"
+      }
+    ]
+  }
+}
